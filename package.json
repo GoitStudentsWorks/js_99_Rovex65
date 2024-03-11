@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/cod-cats/",
+    "build": "vite build --base=/js_99_Rovex65/",
     "preview": "vite preview"
   },
   "devDependencies": {

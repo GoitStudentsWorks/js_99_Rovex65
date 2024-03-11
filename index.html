@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_99_Rovex65/assets/favicon-5cacb374.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
+    
+    <script type="module" crossorigin src="/js_99_Rovex65/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_99_Rovex65/assets/switch-theme-e7c9130e.js">
+    <link rel="modulepreload" crossorigin href="/js_99_Rovex65/assets/vendor-20403eb5.js">
+    <link rel="stylesheet" href="/js_99_Rovex65/assets/switch-theme-5e929069.css">
+    <link rel="stylesheet" href="/js_99_Rovex65/assets/vendor-a18337f1.css">
+  </head>
+  <body>
+    <header>
+  <div class="header-container">
+    <nav class="header-nav">
+      <a class="header-logo-link" href="./index.html">
+        <svg width="24" height="24">
+          <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-logo"></use>
+        </svg>
+        <svg width="77" height="13" class="logo-text">
+          <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-logo-text"></use>
+        </svg>
+      </a>
+      <ul class="header-nav-list">
+        <li class="header-item">
+          <a class="header-nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="header-item">
+          <a class="header-nav-link" href="./shop-list.html">
+            Shopping list
+            <svg width="20" height="20" class="shoping-nav-bag">
+              <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-bag"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch" />
+        <span class="slider"></span>
+      </label>
+
+      <button class="header-burger-menu" type="button" id="burgerToggle">
+      
+        <svg width="28" height="28">
+          <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="burgerMenu" class="burger-menu">
+  <div class="burger-image">
+    <ul class="burger-menu-list">
+      <li class="burger-menu-item">
+        <a id="home" class="burger-menu-nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="burger-menu-item">
+        <a
+          id="shopping-list"
+          class="burger-menu-nav-link burger-menu-nav-link-shop"
+          href="./shop-list.html"
+        >
+          Shopping list
+          <svg class="burger-basket-icon" width="20" height="20">
+            <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-bag"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</header>
+
+
+    <main class="main-page container">
+      <aside class="aside">
+        <div class="sidebar-bookcategories-container">
+  <ul class="sidebar-categories-name">
+    <li class="sb-category-item">
+      <a href="#" data-category="all-categories" class="active"
+        >All Categories</a
+      >
+    </li>
+  </ul>
+</div>
+
+        <div class="support-ukraine">
+  <div class="title-wrapper">
+    <h2 class="support-ukraine-title">Support Ukraine</h2>
+    <svg class="title-svg" width="20" height="32">
+      <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-ukraine"></use>
+    </svg>
+    <!-- <img src="/img/Vector.svg" alt="coat" class="title-svg" /> -->
+  </div>
+  <div class="slider-container">
+    <ul class="support-ukraine-list inner-wrapper"></ul>
+  </div>
+  <button type="button" class="support-ukraine-btn">
+    <img src="/js_99_Rovex65/assets/btn-vector-9c56715b.svg" alt="arrow" class="svg-btn" />
+  </button>
+</div>
+
+      </aside>
+      <div class="home-wrapper">
+  <span class="loader home-loader hidden"></span>
+  <div class="books-wrapper"></div>
+</div>
+
+    </main>
+
+    <button class="scroll-up">
+  <span>
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.37495 14.7L11.775 6.275C11.875 6.175 11.9833 6.10433 12.0999 6.063C12.2166 6.021 12.3416 6 12.4749 6C12.6083 6 12.7333 6.021 12.8499 6.063C12.9666 6.10433 13.075 6.175 13.175 6.275L21.6 14.7C21.8333 14.9333 21.95 15.225 21.95 15.575C21.95 15.925 21.825 16.225 21.575 16.475C21.325 16.725 21.0333 16.85 20.7 16.85C20.3666 16.85 20.075 16.725 19.825 16.475L12.4749 9.125L5.12495 16.475C4.89161 16.7083 4.60428 16.825 4.26295 16.825C3.92095 16.825 3.62495 16.7 3.37495 16.45C3.12495 16.2 2.99995 15.9083 2.99995 15.575C2.99995 15.2417 3.12495 14.95 3.37495 14.7Z"
+        fill="white"
+      />
+    </svg>
+  </span>
+</button>
+
+
+    
+  </body>
+</html>

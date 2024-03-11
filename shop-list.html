@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_99_Rovex65/assets/favicon-5cacb374.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/js_99_Rovex65/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_99_Rovex65/assets/switch-theme-e7c9130e.js">
+    <link rel="modulepreload" crossorigin href="/js_99_Rovex65/assets/vendor-20403eb5.js">
+    <link rel="stylesheet" href="/js_99_Rovex65/assets/switch-theme-5e929069.css">
+    <link rel="stylesheet" href="/js_99_Rovex65/assets/vendor-a18337f1.css">
+  </head>
+  <body>
+    <header>
+  <div class="header-container">
+    <nav class="header-nav">
+      <a class="header-logo-link" href="./index.html">
+        <svg width="24" height="24">
+          <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-logo"></use>
+        </svg>
+        <svg width="77" height="13" class="logo-text">
+          <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-logo-text"></use>
+        </svg>
+      </a>
+      <ul class="header-nav-list">
+        <li class="header-item">
+          <a class="header-nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="header-item">
+          <a class="header-nav-link" href="./shop-list.html">
+            Shopping list
+            <svg width="20" height="20" class="shoping-nav-bag">
+              <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-bag"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <label class="switch">
+        <input type="checkbox" id="toggleSwitch" />
+        <span class="slider"></span>
+      </label>
+
+      <button class="header-burger-menu" type="button" id="burgerToggle">
+      
+        <svg width="28" height="28">
+          <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="burgerMenu" class="burger-menu">
+  <div class="burger-image">
+    <ul class="burger-menu-list">
+      <li class="burger-menu-item">
+        <a id="home" class="burger-menu-nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="burger-menu-item">
+        <a
+          id="shopping-list"
+          class="burger-menu-nav-link burger-menu-nav-link-shop"
+          href="./shop-list.html"
+        >
+          Shopping list
+          <svg class="burger-basket-icon" width="20" height="20">
+            <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-bag"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</header>
+
+    <div class="wrp-sheet container">
+      <div class="support-ukraine">
+  <div class="title-wrapper">
+    <h2 class="support-ukraine-title">Support Ukraine</h2>
+    <svg class="title-svg" width="20" height="32">
+      <use href="/js_99_Rovex65/assets/icons-a661507a.svg#icon-ukraine"></use>
+    </svg>
+    <!-- <img src="/img/Vector.svg" alt="coat" class="title-svg" /> -->
+  </div>
+  <div class="slider-container">
+    <ul class="support-ukraine-list inner-wrapper"></ul>
+  </div>
+  <button type="button" class="support-ukraine-btn">
+    <img src="/js_99_Rovex65/assets/btn-vector-9c56715b.svg" alt="arrow" class="svg-btn" />
+  </button>
+</div>
+
+      <section class="wrp-content">
+        <h1 class="title-shopping empty-cart">
+          Shopping <span class="style-title">List</span>
+        </h1>
+        <div class="shop-content">
+          <ul class="shopping-list"></ul>
+          <div id="tui-pagination-container" class="pagination-container"></div>
+        </div>
+      </section>
+    </div>
+    
+  </body>
+</html>
